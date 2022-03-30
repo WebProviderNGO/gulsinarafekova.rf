@@ -1,0 +1,31 @@
+@media (min-width:300px) {
+    html {
+        overflow-y: auto;
+    }
+    .Logoh1 {
+        font-size: 1.1rem;
+    }
+
+    main {
+        height: 100%;
+    }
+}
+
+@media (min-width:640px) {
+    html {
+        overflow-y: hidden;
+    }
+    .Logoh1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        height: 100vh;
+    }
+}
+
+@media (min-width:960px) {}
+
+@media (min-width:1200px) {}
+
+@media (min-width:1600px) {}

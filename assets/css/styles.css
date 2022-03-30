@@ -1,0 +1,73 @@
+@import "uikit-reset.css";
+@import "responsive.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;700&display=swap');
+
+html {
+    --PrimaryColor: #1e87f0;
+    --SecondaryColor: #fbda0c;
+}
+
+html,
+h1,
+.uk-h1,
+h6,
+.uk-heading-small,
+h4,
+h3 {
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+aside {
+    height: 100vh;
+}
+
+.Logoh1>a,
+.Logoh1>a:hover {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+    overflow-y: auto;
+    scrollbar-color: #ffffff #ccc;
+    scrollbar-width: thin;
+}
+
+.HomeBlock .uk-icon {
+    color: white;
+}
+
+.NavFilter>*> :first-child {
+    text-transform: none;
+}
+
+.NavSoc svg {
+    max-height: 25px;
+    fill: #999;
+    transition: .1s ease-in-out;
+}
+
+.NavSoc svg:hover {
+    fill: #666;
+}
+
+.SectionStats,
+.SectionStats h4 {
+    color: white;
+}
+
+.SectionStats .uk-overlay-primary {
+    background-color: transparent;
+    background-image: url(http://wp-royal.com/hyper-x/roch/wp-content/plugins/Ultimate_VC_Addons/modules/../assets/images/patterns/01.png);
+    opacity: 0.8;
+}
+
+.SectionStatsOverlay {
+    width: 100%;
+}
+
+.Article .uk-padding-small{
+    background-color: rgba(0, 0, 0, 0.25);
+}

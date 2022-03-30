@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Hello, world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.13.1/css/uikit.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- <script async src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script> -->
+    <!-- <script async src="https://unpkg.com/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+</head>
+
+<body uk-filter="target: .js-filter">
+    <div class="uk-padding-small uk-hidden@s">
+        <div class="uk-position-small uk-position-top-right"><button class="uk-button uk-button-link"
+                uk-toggle="target: #offcanvasNav"><span href="" uk-icon="icon: menu"></span></button></div>
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-1-3">
+                <a href="/"><img class="uk-border-pill" src="https://getuikit.com/docs/images/avatar.jpg" width="200"
+                        height="200" alt="Border pill"></a>
+            </div>
+            <div>
+                <h1 class="Logoh1 uk-margin-small-bottom uk-text-lead"><a href="/">Гульсина Рафекова</a></h1>
+                <button class="uk-button uk-button-primary uk-button-small uk-width-1-1">Связаться<span
+                        uk-icon="icon:  triangle-down"></span></button>
+                <div uk-dropdown="mode: click; delay-hide: 0;">
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li><a class="dropdown-close" href="#modal-center" uk-toggle>Отправить сообщение</a></li>
+                        <li><a href="#">Чат</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-text-meta">Как принято считать, ключевые особенности структуры проекта, превозмогая
+                сложившуюся непростую экономическую ситуацию, преданы социально-демократической анафеме.</div>
+        </div>
+    </div>
+    <div id="modal-center" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <form>
+                <fieldset class="uk-fieldset">
+                    <legend class="uk-legend">Отправить сообщение</legend>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Имя">
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Email">
+                    </div>
+                    <div class="uk-margin">
+                        <textarea class="uk-textarea" rows="5" placeholder="Сообщение"></textarea>
+                    </div>
+                    <button class="uk-button uk-button-default uk-width-1-1">Отправить</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="offcanvasNav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-background-default">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <div class="uk-text-center">
+                <a href="/"><img class="uk-border-pill" src="https://getuikit.com/docs/images/avatar.jpg" width="150"
+                        height="150" alt="Border pill"></a>
+                <h1 class="Logoh1 uk-margin-small-top uk-margin-small-bottom uk-text-lead"><a href="/">Гульсина
+                        Рафекова</a></h1>
+            </div>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-active"><a href="about.html">Биография</a></li>
+                <li><a href="">Галерея</a></li>
+                <li><a href="#">Аудио</a></li>
+                <li><a href="#">Видео</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">СМИ</a></li>
+                <li><a href="#">Афиша</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-margin-remove-top" uk-grid>
+        <aside class="uk-inline uk-width-medium uk-visible@s">
+            <div class="uk-padding-small uk-text-center">
+                <h1 class="Logoh1 uk-margin-remove uk-text-lead"><a href="/">Гульсина Рафекова</a></h1>
+                <a href="/"><img class="uk-border-pill uk-margin-top" src="https://getuikit.com/docs/images/avatar.jpg"
+                        width="200" height="200" alt="Border pill"></a>
+                <ul class="uk-nav-default uk-nav-center uk-margin-medium-top uk-margin-medium-bottom uk-text-uppercase uk-text-bold"
+                    uk-nav>
+                    <li class="uk-active"><a href="about.html">Биография</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Аудио</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">СМИ</a></li>
+                    <li><a href="#">Афиша</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="uk-position-bottom uk-padding-small uk-margin-medium-left uk-text-center">
+                <ul class="NavSoc uk-subnav uk-flex-center uk-margin-small-bottom">
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M184.2 177.1c0-22.1 17.9-40 39.8-40s39.8 17.9 39.8 40c0 22-17.9 39.8-39.8 39.8s-39.8-17.9-39.8-39.8zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-305.1 97.1c0 44.6 36.4 80.9 81.1 80.9s81.1-36.2 81.1-80.9c0-44.8-36.4-81.1-81.1-81.1s-81.1 36.2-81.1 81.1zm174.5 90.7c-4.6-9.1-17.3-16.8-34.1-3.6 0 0-22.7 18-59.3 18s-59.3-18-59.3-18c-16.8-13.2-29.5-5.5-34.1 3.6-7.9 16.1 1.1 23.7 21.4 37 17.3 11.1 41.2 15.2 56.6 16.8l-12.9 12.9c-18.2 18-35.5 35.5-47.7 47.7-17.6 17.6 10.7 45.8 28.4 28.6l47.7-47.9c18.2 18.2 35.7 35.7 47.7 47.9 17.6 17.2 46-10.7 28.6-28.6l-47.7-47.7-13-12.9c15.5-1.6 39.1-5.9 56.2-16.8 20.4-13.3 29.3-21 21.5-37z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="uk-text-meta">© 2022 Гульсина Рафекова</div>
+            </div>
+        </aside>
+        <main class="uk-width-expand">
+            <header class="uk-inline uk-width-expand uk-height-medium uk-background-muted uk-text-center">
+                <div class="uk-panel uk-position-center uk-padding-large">
+                    <h2 class="uk-heading-small">Биография</h2>
+                    <p>Как принято считать, ключевые особенности структуры проекта, превозмогая
+                        сложившуюся непростую экономическую ситуацию, преданы социально-демократической анафеме.</p>
+                </div>
+            </header>
+            <section class="uk-child-width-1-1 uk-child-width-1-2@m uk-padding-large" uk-grid>
+                <div><img src="https://getuikit.com/docs/images/avatar.jpg" alt=""></div>
+                <div class="uk-panel">
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruden exercitation inim veniam,
+                        quis nostruden exer citatiosed do eiusmod teet dolore magna aliqua colateslo men desams et do
+                        eiusmod tempor incididunt ut labore et dolore sed do usmodas.</p>
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruden exercitation inim veniam,
+                        quis nostruden exer citatiosed do eiusmod teet dolore magna aliqua colateslo men desams et do
+                        eiusmod tempor incididunt ut labore et dolore sed do usmodas.</p>
+                    <h3>Заголовок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruden exercitation inim veniam,
+                        quis nostruden exer citatiosed do eiusmod teet dolore magna aliqua colateslo men desams et do
+                        eiusmod tempor incididunt ut labore et dolore sed do usmodas.</p>
+                </div>
+            </section>
+            <section class="uk-section uk-section-muted uk-padding-large">
+                <div class="uk-child-width-1-1 uk-child-width-1-3@m" uk-grid>
+                    <div class="uk-panel">
+                        <h4 class="uk-text-small uk-text-bold uk-text-uppercase uk-text-warning">Деятельность</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur oks adipisicing elit, sed do eiusmod tempor aran
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruden etmeros
+                            exercitation inim veniam, quis nostruden ar exercitatiosed do eiusmod teet dolore magnas
+                            aliqua. Ut enim ad minim veniam, quis dose nostruden exercitation sed dmpor incididunt ut
+                            labore et dolore magna aliqua ullamco laboris nisi ut aliquip quis nostruden etmeroser.</p>
+                    </div>
+                    <div class="uk-panel">
+                        <h4 class="uk-text-small uk-text-bold uk-text-uppercase uk-text-warning">Деятельность</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur oks adipisicing elit, sed do eiusmod tempor aran
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruden etmeros
+                            exercitation inim veniam, quis nostruden ar exercitatiosed do eiusmod teet dolore magnas
+                            aliqua. Ut enim ad minim veniam, quis dose nostruden exercitation sed dmpor incididunt ut
+                            labore et dolore magna aliqua ullamco laboris nisi ut aliquip quis nostruden etmeroser.</p>
+                    </div>
+                    <div class="uk-panel">
+                        <h4 class="uk-text-small uk-text-bold uk-text-uppercase uk-text-warning">Деятельность</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur oks adipisicing elit, sed do eiusmod tempor aran
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruden etmeros
+                            exercitation inim veniam, quis nostruden ar exercitatiosed do eiusmod teet dolore magnas
+                            aliqua. Ut enim ad minim veniam, quis dose nostruden exercitation sed dmpor incididunt ut
+                            labore et dolore magna aliqua ullamco laboris nisi ut aliquip quis nostruden etmeroser.</p>
+                    </div>
+                </div>
+            </section>
+            <link href="assets/vendor/fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+            <section
+                class="SectionStats uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle"
+                style="background-image: url(content/bac-son-g43d167b4e_1920.jpg);">
+                <div class="uk-overlay-primary uk-position-cover"></div>
+                <div class="SectionStatsOverlay uk-overlay uk-position-center">
+                    <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-text-center" uk-grid>
+                        <div>
+                            <i class="fa-solid fa-music fa-2xl"></i>
+                            <h4 class="uk-margin-small-top uk-margin-small-bottom uk-heading-small uk-text-light">000
+                            </h4>
+                            <div class="uk-text-small uk-text-uppercase">Выступлений</div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-trophy fa-2xl"></i>
+                            <h4 class="uk-margin-small-top uk-margin-small-bottom uk-heading-small uk-text-light">000
+                            </h4>
+                            <div class="uk-text-small uk-text-uppercase">Наград</div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-microphone-lines fa-2xl"></i>
+                            <h4 class="uk-margin-small-top uk-margin-small-bottom uk-heading-small uk-text-light">000
+                            </h4>
+                            <div class="uk-text-small uk-text-uppercase">Песен</div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-briefcase fa-2xl"></i>
+                            <h4 class="uk-margin-small-top uk-margin-small-bottom uk-heading-small uk-text-light">000
+                            </h4>
+                            <div class="uk-text-small uk-text-uppercase">Сотрудничество</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="uk-position-relative uk-visible-toggle uk-padding-large" tabindex="-1"
+                uk-slider="autoplay: true; autoplay-interval: 2000">
+
+                <ul
+                    class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@m uk-grid uk-grid-large">
+                    <li>
+                        <div class="uk-panel">
+                            <img src="content/logo/logo-sq.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="content/logo/2.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/images/imgvideo400.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/images/imgvideo400.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/images/imgvideo400.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/images/imgvideo400.jpg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-panel">
+                            <img src="assets/images/imgvideo400.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+
+            </section>
+        </main>
+    </div>
+    <footer class="uk-grid-collapse uk-hidden@s" uk-grid>
+        <div class="uk-padding-small uk-text-meta">© 2022 Гульсина Рафекова</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.13.1/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.13.1/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

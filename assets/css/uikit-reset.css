@@ -1,0 +1,16 @@
+.uk-tab::before {
+    border-bottom-color: transparent;
+}
+
+.uk-tab>*>a {
+    border-bottom-width: 3px;
+}
+
+#offcanvasNav .uk-nav-primary>li>a {
+    color: #999;
+}
+
+#offcanvasNav .uk-nav-primary>li.uk-active>a,
+#offcanvasNav .uk-close {
+    color: #333;
+}
